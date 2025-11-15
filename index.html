@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asynchronics | Робот-аватар</title>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+  <!-- Шапка -->
+  <header class="flex items-center justify-between p-6 bg-black border-b border-gray-800 sticky top-0 z-50">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="Asynchronics Logo" class="w-10 h-10" />
+      <span class="text-xl font-bold">Asynchronics</span>
+    </div>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#project" class="hover:text-blue-400">О проекте</a>
+      <a href="#tech" class="hover:text-blue-400">Технология</a>
+      <a href="#future" class="hover:text-blue-400">Применение</a>
+      <a href="#contact" class="hover:text-blue-400">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Hero: фоновая картинка с наложенным текстом -->
+  <section class="relative h-screen w-full bg-cover bg-center" style="background-image: url('robot_hero.jpg');">
+    <div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">Робот-аватар для опасных условий труда</h1>
+      <p class="max-w-xl text-gray-300" data-aos="fade-up" data-aos-delay="100">Удалённое управление. Интуитивный контроль. Безопасность человека.</p>
+    </div>
+  </section>
+
+
+
+  <!-- О проекте -->
+  <section id="project" class="py-24 px-6 md:px-24 bg-black">
+    <div class="max-w-7xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">О проекте</h2>
+      <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+        Мы — команда Asynchronics. Цель проекта — создание и успешное тестирование прототипа робота-аватара для выполнения работ в опасных и вредных для здоровья условиях. Удалённое управление роботом помогает снизить риски для работников и обеспечить безопасность на рабочем месте.
+      </p>
+    </div>
+  </section>
+
+  <!-- Фото-переход -->
+  <section class="h-screen w-full bg-cover bg-center" style="background-image: url('robot_transition2.jpg');"></section>
+
+  <!-- Технология -->
+  <section id="tech" class="py-24 px-6 md:px-24 bg-gray-900">
+    <div class="max-w-7xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">Технология</h2>
+      <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+        Технология захвата движения с человека позволяет сделать управление интуитивно понятным и достаточно точным. Робот следует за оператором практически в реальном времени.
+      </p>
+    </div>
+  </section>
+
+  <!-- Фото-переход -->
+  <section class="h-screen w-full bg-cover bg-center" style="background-image: url('robot_transition3.jpg');"></section>
+
+  <!-- Видение будущего -->
+  <section id="future" class="py-24 px-6 md:px-24 bg-black">
+    <div class="max-w-7xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-6">Видение будущего</h2>
+      <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+        Мы видим будущее, где роботы-аватары применяются для исследования труднодоступных мест, сбора данных и образцов, мониторинга и обслуживания инфраструктуры (газопроводы и электросети), помощи при авариях и поисково-спасательных операциях.
+      </p>
+    </div>
+  </section>
+
+  <!-- Фото-переход -->
+  <!--section class="h-screen w-full bg-cover bg-center" style="background-image: url('robot_transition4.jpg');"></section-->
+  <section class="h-screen w-full bg-cover bg-center" style="background-image: url('robot_transition4.jpg');"></section>
+  
+  <!-- Новости -->
+  <section id="news" class="py-24 px-6 md:px-24 bg-black relative z-10 -mt-32">
+   <div class="max-w-7x1 mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-12 text-center">Новости в СМИ</h2>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+	  <!-- Карточка новости -->
+	  <div class="bg-gray-800 rounded-x1 overflow-hidden shadow-lg">
+	   <img src="news1.jpg" Alt="Упоминание в СМИ" class="w-full h-48 object-cover">
+	   <div class="p-6">
+	    <h3 class="text-x1 font-semibold mb-2">Студентка МГППУ отправится в экспедицию в Арктику</h3>
+		<p class="text-gray-400 text-sm mb-4">В экспедиции Анна Цыганова определит способы усовершенствования модели робота и проведет исследования для своей дипломной работы.</p>
+		<a href="https://meschanskayasloboda.moscow/2023/09/28/studentka-mgppu-otpravitsya-v-ekspedicziyu-v-arktiku/" class="text-blue-400 hover:underline font-semibold">Читать далее</a>
+	   </div>
+	  </div>
+	  <!-- ЕЩЕ новость по шаблону выше -->
+	  	  <!-- Карточка новости -->
+	  <div class="bg-gray-800 rounded-x1 overflow-hidden shadow-lg">
+	   <img src="news2.jpg" Alt="Упоминание в СМИ" class="w-full h-48 object-cover">
+	   <div class="p-6">
+	    <h3 class="text-x1 font-semibold mb-2">Какие стартапы нужны рынку и инвесторам в 2023 году?</h3>
+		<p class="text-gray-400 text-sm mb-4">Команда Asynchronics заняла 3 место на международной премии Искусный интеллект в номинации идея года.</p>
+		<a href="https://vc.ru/id1828868/744119-kakie-startapy-nuzhny-rynku-i-investoram-v-2023-godu" class="text-blue-400 hover:underline font-semibold">Читать далее</a>
+	   </div>
+	  </div>
+	  <!-- ЕЩЕ новость по шаблону выше -->
+	  
+	 </div>
+	</div>
+   </section>
+	 </div>
+	</div>
+   </section>
+	 
+  <!-- Контакты -->
+  <section id="contact" class="py-24 px-6 md:px-24 bg-gray-900 text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Контакты</h2>
+    <p class="text-gray-400 mb-8" data-aos="fade-up">Напиши нам: <a href="mailto:asynchronics@inbox.ru" class="text-blue-400 hover:underline">asynchronics@inbox.ru</a></p>
+
+    <form class="max-w-xl mx-auto space-y-4" data-aos="fade-up" action="https://formspree.io/f/your-id" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required class="w-full p-3 rounded bg-black border border-gray-700 placeholder-gray-500">
+      <input type="email" name="email" placeholder="Ваш Email" required class="w-full p-3 rounded bg-black border border-gray-700 placeholder-gray-500">
+      <textarea name="message" placeholder="Ваше сообщение" required class="w-full p-3 rounded bg-black border border-gray-700 placeholder-gray-500"></textarea>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded">Отправить</button>
+    </form>
+
+    <div class="flex justify-center space-x-6 mt-10">
+      <a href="https://t.me/asynchronics_channel" target="_blank" class="text-blue-400 hover:text-white">Telegram</a>
+      <a href="https://vk.com/club219995893" target="_blank" class="text-pink-400 hover:text-white">Вконтакте</a>
+      <a href="https://habr.com/ru/users/AnnTa/" target="_blank" class="text-blue-300 hover:text-white">Habr</a>
+	  <a href="https://www.youtube.com/@asynchronics" target="_blank" class="text-red-300 hover:text-white">YouTube</a>
+    </div>
+  </section>
+
+  <script>AOS.init();</script>
+</body>
+</html>
